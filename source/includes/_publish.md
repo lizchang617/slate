@@ -36,3 +36,23 @@ git push
 ```
 
 Done! Your changes should now be live on http://lizchang617.github.io/slate, and the main branch should be updated with your edited markdown. Note that if this is your first time publishing Slate, it can sometimes take ten minutes or so before your content is available online.
+
+## Troubleshooting
+
+### Common Errors
+
+If you see this error, you probably have a syntax error within your markdown files that need to be corrected.
+
+``` shell
+There were errors during this build, re-run with `middleman build --verbose` to see the full exception.
+```
+
+You can refer to these pages for examples:
+	* [Markdown syntax used in Slate](https://github.com/lord/slate/wiki/Markdown-Syntax)
+	* https://daringfireball.net/projects/markdown/
+	* http://www.markdowntutorial.com/
+
+You can also copy and paste your markdown code here to get a live translation of how it outputs. You can look through the output to detect your syntax error.
+
+	* http://dillinger.io/
+
