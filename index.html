@@ -200,7 +200,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;markdown&quot;,&quot;markup&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;markdown&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -212,7 +212,6 @@
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
               <a href="#" data-language-name="markdown">markdown</a>
-              <a href="#" data-language-name="markup">markup</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -231,9 +230,7 @@
         <h1 id="setting-up-slate">Setting Up Slate</h1>
 
 <p>Fork the <a href="https://github.com/lord/slate">Slate</a> repository on Github by clicking the fork button on the top right corner.
-Open your terminal and run the following command lines</p>
-
-<p>To clone and start slate locally, use these command lines:</p>
+Open your terminal and run the following command lines. To clone and start slate locally, use these command lines:</p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Clone your forked repository (not our original one) to your hard drive</span>
 git clone https://github.com/lizchang617/slate.git
 <span class="c"># go into your slate directory</span>
@@ -248,16 +245,17 @@ bundle <span class="nb">exec </span>middleman server
 <h1 id="editing-slate-markdown">Editing Slate Markdown</h1>
 
 <p>Check out the following links for Documentation in Markdown:
-  - <a href="https://github.com/lord/slate/wiki/Markdown-Syntax">Markdown syntax used in Slate</a>
-  - https://daringfireball.net/projects/markdown/
-  - http://www.markdowntutorial.com/</p>
+  * <a href="https://github.com/lord/slate/wiki/Markdown-Syntax">Markdown syntax used in Slate</a>
+  * https://daringfireball.net/projects/markdown/
+  * http://www.markdowntutorial.com/</p>
 
 <p>Open your Slate folder in a text editor of your choice, and navigate to the <em>index.html.md</em> file located in <strong>Slate&gt;source</strong> to start editing your markdown file.</p>
 
 <h2 id="adding-pages">Adding Pages</h2>
 
 <p>You can add pages in the <em>includes</em> folder located under <strong>Slate&gt;source</strong>. Make sure you add an underscore(&ldquo;_&rdquo;) before the name of the page. To reference the page, input the following code in your <em>index.html.md</em> file</p>
-<pre class="highlight markdown tab-markdown"><code>includes:
+<pre class="highlight markdown tab-markdown"><code>
+includes:
 <span class="p">  -</span> errors
 
 </code></pre>
@@ -316,7 +314,6 @@ git push
           <div class="lang-selector">
                 <a href="#" data-language-name="shell">shell</a>
                 <a href="#" data-language-name="markdown">markdown</a>
-                <a href="#" data-language-name="markup">markup</a>
           </div>
       </div>
     </div>
