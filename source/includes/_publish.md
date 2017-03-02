@@ -49,11 +49,11 @@ There were errors during this build, re-run with `middleman build --verbose` to 
 
 You can refer to these pages for examples:
 
-	* [Markdown syntax used in Slate](https://github.com/lord/slate/wiki/Markdown-Syntax)
-	* https://daringfireball.net/projects/markdown/
-	* http://www.markdowntutorial.com/
+1. [Markdown syntax used in Slate](https://github.com/lord/slate/wiki/Markdown-Syntax)
+2. https://daringfireball.net/projects/markdown/
+3. http://www.markdowntutorial.com/
 
 You can also copy and paste your markdown code here to get a live translation of how it outputs. You can look through the output to detect your syntax error.
 
-	* http://dillinger.io/
+* http://dillinger.io/
 

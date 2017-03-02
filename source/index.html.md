@@ -36,9 +36,9 @@ You can now see the docs at http://localhost:4567.
 
 Check out the following links for Documentation in Markdown:
 
-  * [Markdown syntax used in Slate](https://github.com/lord/slate/wiki/Markdown-Syntax)
-  * https://daringfireball.net/projects/markdown/
-  * http://www.markdowntutorial.com/
+1. [Markdown syntax used in Slate](https://github.com/lord/slate/wiki/Markdown-Syntax)
+2. https://daringfireball.net/projects/markdown/
+3. http://www.markdowntutorial.com/
 
 Open your Slate folder in a text editor of your choice, and navigate to the *index.html.md* file located in **Slate>source** to start editing your markdown file.
 
