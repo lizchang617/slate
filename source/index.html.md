@@ -35,6 +35,7 @@ You can now see the docs at http://localhost:4567.
 # Editing Slate Markdown
 
 Check out the following links for Documentation in Markdown:
+
   * [Markdown syntax used in Slate](https://github.com/lord/slate/wiki/Markdown-Syntax)
   * https://daringfireball.net/projects/markdown/
   * http://www.markdowntutorial.com/

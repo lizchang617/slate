@@ -48,6 +48,7 @@ There were errors during this build, re-run with `middleman build --verbose` to 
 ```
 
 You can refer to these pages for examples:
+
 	* [Markdown syntax used in Slate](https://github.com/lord/slate/wiki/Markdown-Syntax)
 	* https://daringfireball.net/projects/markdown/
 	* http://www.markdowntutorial.com/
