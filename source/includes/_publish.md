@@ -1,23 +1,23 @@
 ---
 # Publishing Your Docs
 
-
 ## Publish Locally
 
-In order to publish your documentation locally and view the output run:
+In order to publish your documentation locally and view the output run the following in your slate directory:
 
 ``` shell
-
+#Make sure you are in your slate directory 
+#This command will create a build folder with the html of your markdown files
 bundle exec middleman build --clean
 
 ```
-Then go into your **slate>build** folder and view index.html in your browser.
+Then go into your **slate>build** folder and view index.html in your browser. You can do this by right clicking in the file and click **Open in Browser**.
 
 ## Publish to Github
 
-Publishing your API documentation couldn't be more simple. Make sure your origin is a Slate fork in your own account, not our original repo. 
+Make sure your origin is a Slate fork in your own account, not the original slate repo. 
 
-Run the following command lines:
+Run the following command lines within your slate directory:
 
 ``` shell
 # Initialize git
@@ -35,19 +35,19 @@ git push
 
 ```
 
-Done! Your changes should now be live on http://lizchang617.github.io/slate, and the main branch should be updated with your edited markdown. Note that if this is your first time publishing Slate, it can sometimes take ten minutes or so before your content is available online.
+Done! Your changes should now be live on http://yourusername.github.io/slate, and the main branch should be updated with your edited markdown. Note that if this is your first time publishing Slate, it can sometimes take ten minutes or so before your content is available online.
 
 ## Troubleshooting
 
 ### Common Errors
 
-If you see this error, you probably have a syntax error within your markdown files that need to be corrected.
+If you see this error, you probably have a syntax error within your markdown files that needs to be corrected.
 
 ``` shell
 There were errors during this build, re-run with `middleman build --verbose` to see the full exception.
 ```
 
-You can refer to these pages for examples:
+You can refer to these pages for help on Markdown documentation:
 
 1. [Markdown syntax used in Slate](https://github.com/lord/slate/wiki/Markdown-Syntax)
 2. https://daringfireball.net/projects/markdown/
