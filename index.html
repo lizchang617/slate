@@ -227,10 +227,36 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id="setting-up-slate">Setting Up Slate</h1>
+        <h1 id="prerequisites">Prerequisites</h1>
+
+<ul>
+<li>Linux or OS X — Windows may work, but is unsupported.</li>
+<li>Ruby, version 2.2.5 or newer</li>
+<li>Bundler — If Ruby is already installed, but the bundle command doesn&rsquo;t work, just run gem install bundler in a terminal.</li>
+</ul>
+
+<h2 id="updating-ruby">Updating Ruby</h2>
+
+<p>You will need to update Ruby on your system. In order to do so, you will need to do the following:</p>
+
+<ol>
+<li>Upgrade Your System to macOS Sierra</li>
+<li>Install XCode Command Line Tools</li>
+<li>Configure Git</li>
+<li>Install Homebrew</li>
+<li>Install GPG</li>
+<li>Install RVM</li>
+<li>Install Ruby</li>
+<li>Update RubyGems</li>
+<li>Install Rails</li>
+</ol>
+
+<p>You can find the more detailed instructions <a href="http://railsapps.github.io/installrubyonrails-mac.html">here</a></p>
+
+<h1 id="setting-up-slate">Setting Up Slate</h1>
 
 <p>Fork the <a href="https://github.com/lord/slate">Slate</a> repository on Github by clicking the fork button on the top right corner.
-Open your terminal and run the following command lines. To clone and start slate locally, use these command lines:</p>
+Open your terminal and run the following command lines. To clone and start slate locally, open your terminal and run these command lines:</p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Clone your forked repository (not our original one) to your hard drive</span>
 git clone https://github.com/lizchang617/slate.git
 <span class="c"># go into your slate directory</span>
@@ -256,10 +282,10 @@ bundle <span class="nb">exec </span>middleman server
 
 <h2 id="adding-pages">Adding Pages</h2>
 
-<p>You can add pages in the <em>includes</em> folder located under <strong>Slate&gt;source</strong>. Make sure you add an underscore(&ldquo;_&rdquo;) before the name of the page. To reference the page, input the following code in your <em>index.html.md</em> file</p>
+<p>You can add pages in the <em>includes</em> folder located under <strong>Slate&gt;source</strong>. Make sure you add an underscore(&ldquo;_&rdquo;) before the name of the page and make sure you save it as a markdown file. To reference the page, input the following code in your <em>index.html.md</em> file</p>
 <pre class="highlight markdown tab-markdown"><code>
 includes:
-<span class="p">  -</span> errors
+<span class="p">  -</span> publish
 
 </code></pre>
           <hr>
@@ -268,18 +294,19 @@ includes:
 
 <h2 id="publish-locally">Publish Locally</h2>
 
-<p>In order to publish your documentation locally and view the output run:</p>
-<pre class="highlight shell tab-shell"><code>
+<p>In order to publish your documentation locally and view the output run the following in your slate directory:</p>
+<pre class="highlight shell tab-shell"><code><span class="c">#Make sure you are in your slate directory </span>
+<span class="c">#This command will create a build folder with the html of your markdown files</span>
 bundle <span class="nb">exec </span>middleman build --clean
 
 </code></pre>
-<p>Then go into your <strong>slate&gt;build</strong> folder and view index.html in your browser.</p>
+<p>Then go into your <strong>slate&gt;build</strong> folder and view index.html in your browser. You can do this by right clicking in the file and click <strong>Open in Browser</strong>.</p>
 
 <h2 id="publish-to-github">Publish to Github</h2>
 
-<p>Publishing your API documentation couldn&rsquo;t be more simple. Make sure your origin is a Slate fork in your own account, not our original repo. </p>
+<p>Make sure your origin is a Slate fork in your own account, not the original slate repo. </p>
 
-<p>Run the following command lines:</p>
+<p>Run the following command lines within your slate directory:</p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Initialize git</span>
 git init
 <span class="c"># Add all the files</span>
@@ -294,16 +321,16 @@ git push
 ./deploy.sh
 
 </code></pre>
-<p>Done! Your changes should now be live on http://lizchang617.github.io/slate, and the main branch should be updated with your edited markdown. Note that if this is your first time publishing Slate, it can sometimes take ten minutes or so before your content is available online.</p>
+<p>Done! Your changes should now be live on http://yourusername.github.io/slate, and the main branch should be updated with your edited markdown. Note that if this is your first time publishing Slate, it can sometimes take ten minutes or so before your content is available online.</p>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
 <h3 id="common-errors">Common Errors</h3>
 
-<p>If you see this error, you probably have a syntax error within your markdown files that need to be corrected.</p>
+<p>If you see this error, you probably have a syntax error within your markdown files that needs to be corrected.</p>
 <pre class="highlight shell tab-shell"><code>There were errors during this build, re-run with <span class="sb">`</span>middleman build --verbose<span class="sb">`</span> to see the full exception.
 </code></pre>
-<p>You can refer to these pages for examples:</p>
+<p>You can refer to these pages for help on Markdown documentation:</p>
 
 <ol>
 <li><a href="https://github.com/lord/slate/wiki/Markdown-Syntax">Markdown syntax used in Slate</a></li>
